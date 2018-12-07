@@ -1,0 +1,11 @@
+---
+applications:
+- name: package
+  memory: 64M
+  disk_quota: 512M
+  path: public
+  stack: cflinuxfs3 #just change the stack to get the version of the package you need
+  command: $HOME/public/package.sh && rm $HOME/public/package.sh && $HOME/boot.sh
+  buildpacks:
+  - https://github.com/cloudfoundry/apt-buildpack.git
+  - staticfile_buildpack
