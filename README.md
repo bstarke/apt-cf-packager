@@ -45,8 +45,6 @@ applications:
 - Open a browser to the route you deployed the application.
 - Click the link to download the zip.
 
-![ldd-output](/images/packager-link.png)
-
 ## Upload the archive to your repository (Artifactory, Nexus, Archiva, etc.)
 
 - Use the appropriate group, artifact and version
