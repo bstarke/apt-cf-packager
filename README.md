@@ -37,7 +37,11 @@ applications:
   buildpacks:
   - https://github.com/cloudfoundry/apt-buildpack.git
   - staticfile_buildpack
+  env:
+    FLATTEN: true
 ```
+
+Set `FLATTEN=false` if you'd like to keep the original directory structure of the package installed by the apt-buildpack.  This can be helpful if you need to futher process the results or trim some of the artifacts before pulling it into your repository or application.
 
 ## Push to PCF
 
