@@ -9,3 +9,5 @@ applications:
   buildpacks:
   - https://github.com/cloudfoundry/apt-buildpack.git
   - staticfile_buildpack
+  env:
+    FLATTEN: true
